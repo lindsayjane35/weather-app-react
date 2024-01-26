@@ -6,7 +6,15 @@ function App() {
     <div className="App">
       <h1>Weather App</h1>
       <Weather />
-      <footer>Open-source code by Lindsay Land.</footer>
+      <footer>
+        <a
+          href="https://github.com/lindsayjane35/weather-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Open-source code by Lindsay Land.
+        </a>
+      </footer>
     </div>
   );
 }
