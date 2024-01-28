@@ -4,8 +4,11 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1>
-      <Weather />
+      <div className="Container">
+        <h1>Weather App</h1>
+
+        <Weather />
+      </div>
       <footer>
         <a
           href="https://github.com/lindsayjane35/weather-app-react"
