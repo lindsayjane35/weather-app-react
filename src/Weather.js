@@ -2,28 +2,33 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
-  const [city, setCity] = useState("");
-  const [loaded, setLoaded] = useState(false);
-  const [weather, setWeather] = useState({});
+export default function Weather(props) {
+  const [city, setCity] = useState(props.defaultCity);
+  const [weatherData, setWeatherData] = useState({});
 
-  function showWeather(response) {
-    setLoaded(true);
-    setWeather({
+  function handleReponse(response) {
+    setWeatherData({
+      ready: true,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
+      date: "Saturday 12:00",
+      city: response.data.name,
     });
   }
 
   function handleSubmit(event) {
     event.preventDefault();
-    let apiKey = "58a6775f97527351bf6c6966e209be39";
+    search();
+  }
+
+  function search() {
+    const apiKey = "58a6775f97527351bf6c6966e209be39";
     let units = "imperial";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-    axios.get(apiUrl).then(showWeather);
+    axios.get(apiUrl).then(handleReponse);
   }
 
   function updateCity(event) {
@@ -44,7 +49,7 @@ export default function Weather() {
     </form>
   );
 
-  if (loaded) {
+  if (weatherData.ready) {
     return (
       <div className="Weather">
         <h2>{city}</h2>
@@ -52,24 +57,28 @@ export default function Weather() {
 
         <div className="row">
           <div className="col-6">
-            <img src={weather.icon} alt={weather.description} />
+            <img src={weatherData.icon} alt={weatherData.description} />
 
-            <span className="temperature">70°</span>
-            <span className="unit">F | C</span>
+            <span className="temperature">
+              {Math.round(weatherData.temperature)}
+            </span>
+            <span className="unit">°F | C</span>
           </div>
 
           <div className="col-6">
             <ul>
-              <li>Temperature: {Math.round(weather.temperature)}°F</li>
-              <li>Description: {weather.description}</li>
-              <li>Humidity: {weather.humidity}%</li>
-              <li>Wind: {weather.wind}mph</li>
+              <li>{weatherData.date}</li>
+              <li>Temperature: {Math.round(weatherData.temperature)}°F</li>
+              <li>Description: {weatherData.description}</li>
+              <li>Humidity: {weatherData.humidity}%</li>
+              <li>Wind: {weatherData.wind}mph</li>
             </ul>
           </div>
         </div>
       </div>
     );
   } else {
-    return form;
+    search();
+    return "loading...";
   }
 }
