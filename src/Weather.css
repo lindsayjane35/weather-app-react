@@ -1,0 +1,45 @@
+.Weather {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.329);
+  width: 600px;
+  border-radius: 10px;
+}
+.search-form {
+  margin: 10px;
+}
+.search-field,
+.search-button {
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+}
+.search-field {
+  border: 1px solid rgb(83, 52, 83);
+}
+
+.search-button {
+  background-color: rgb(48, 30, 48);
+  border: none;
+  color: white;
+}
+.Weather li {
+  font-size: 16px;
+  text-align: left;
+}
+.Weather img {
+  height: 90px;
+  position: relative;
+  top: -14px;
+}
+.temperature {
+  font-size: 60px;
+  font-weight: 600;
+}
+.unit {
+  font-size: 22px;
+  position: relative;
+  top: -26px;
+  margin-left: 5px;
+}

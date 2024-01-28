@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Weather.css";
 
 export default function Weather() {
   const [city, setCity] = useState("");
@@ -29,25 +30,43 @@ export default function Weather() {
     setCity(event.target.value);
   }
   let form = (
-    <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="Enter a city.." onChange={updateCity} />
-      <button type="Submit">Search</button>
+    <form className="search-form" onSubmit={handleSubmit}>
+      <input
+        className="search-field"
+        type="search"
+        placeholder="Enter a city.."
+        autoFocus="on"
+        onChange={updateCity}
+      />
+      <button className="search-button" type="Submit">
+        Search
+      </button>
     </form>
   );
 
   if (loaded) {
     return (
-      <div>
+      <div className="Weather">
+        <h2>{city}</h2>
         {form}
-        <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°F</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}mph</li>
-          <li>
+
+        <div className="row">
+          <div className="col-6">
             <img src={weather.icon} alt={weather.description} />
-          </li>
-        </ul>
+
+            <span className="temperature">70°</span>
+            <span className="unit">F | C</span>
+          </div>
+
+          <div className="col-6">
+            <ul>
+              <li>Temperature: {Math.round(weather.temperature)}°F</li>
+              <li>Description: {weather.description}</li>
+              <li>Humidity: {weather.humidity}%</li>
+              <li>Wind: {weather.wind}mph</li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   } else {
