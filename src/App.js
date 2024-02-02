@@ -5,18 +5,28 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
-        <h1>Weather App</h1>
+        <h2>Weather App</h2>
 
         <Weather defaultCity="Los Angeles" />
       </div>
       <footer>
+        This project was coded by{" "}
+        <a
+          href="https://github.com/lindsayjane35"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Lindsay Land
+        </a>{" "}
+        and is open-sourced on{" "}
         <a
           href="https://github.com/lindsayjane35/weather-app-react"
           target="_blank"
           rel="noreferrer"
         >
-          Open-source code by Lindsay Land.
+          GitHub
         </a>
+        .
       </footer>
     </div>
   );

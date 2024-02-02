@@ -24,25 +24,34 @@
   border: none;
   color: white;
 }
-.Weather li {
-  font-size: 16px;
-  text-align: left;
+ul {
+  margin: 15px;
+
+  list-style-type: none;
+  padding-left: 20px;
 }
-.Weather img {
-  height: 90px;
-  position: relative;
-  top: -14px;
+li {
+  font-size: 20px;
+  text-align: left;
 }
 .temperature {
   font-size: 60px;
   font-weight: 600;
+}
+.icon {
+  position: relative;
+  top: -10px;
+  margin: 10px;
 }
 .unit {
   font-size: 22px;
   position: relative;
   top: -26px;
   margin-left: 5px;
-}
-.FormattedDate {
   font-weight: 700;
+}
+.unit a {
+  color: rgb(48, 30, 48);
+  text-decoration: none;
+  font-weight: lighter;
 }

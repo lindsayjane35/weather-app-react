@@ -2,21 +2,26 @@
   text-align: center;
   background-color: rgb(83, 52, 83);
   height: 500px;
-  margin: 30px;
+  margin: 10px;
   border-radius: 30px;
   color: white;
 }
-
-ul {
-  list-style-type: none;
+h1 {
+  padding: 15px;
+  font-size: 45px !important;
 }
+h2 {
+  padding: 25px;
+}
+
 footer {
   text-align: center;
 }
-a {
+footer a {
   color: rgb(83, 52, 83) !important;
   text-decoration: none !important;
+  font-weight: 700;
 }
-a:hover {
-  font-weight: 600;
+footer a:hover {
+  text-decoration: underline !important;
 }
