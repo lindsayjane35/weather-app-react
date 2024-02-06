@@ -1,25 +1,26 @@
 .Weather {
   margin: 10px;
   padding: 20px 0 10px 0;
-  background-color: rgba(255, 255, 255, 0.329);
+  background-color: rgb(179 239 235 / 18%);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+  text-align: center;
 }
 .search-form {
   margin: 10px;
 }
 .search-field,
 .search-button {
-  border-radius: 20px;
-  padding: 5px 10px 5px 10px;
+  border-radius: 23px;
+  padding: 10px 15px 10px 15px;
   margin: 5px;
 }
 .search-field {
-  border: 1px solid rgb(83, 52, 83);
+  border: 1px solid #394043;
 }
 
 .search-button {
-  background-color: rgb(48, 30, 48);
+  background-color: #394043;
   border: none;
   color: white;
 }
@@ -32,7 +33,6 @@ h3 {
 }
 ul {
   margin: 15px;
-
   list-style-type: none;
   padding-left: 20px;
 }
@@ -57,7 +57,7 @@ li {
   font-weight: 700;
 }
 .unit a {
-  color: rgb(48, 30, 48);
+  color: #626b6e;
   text-decoration: none;
   font-weight: lighter;
 }
