@@ -1,26 +1,26 @@
 body {
-  background: linear-gradient(
-    160deg,
-    rgb(244, 237, 172) 22.8%,
-    rgb(160, 236, 208) 50.3%,
-    rgb(133, 214, 234) 75.5%
-  );
-  height: 915px;
-  color: #394043 !important;
+  background-image: url("../public/starry-sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ecf4f7 !important;
+  font-family: "Miriam Libre", sans-serif !important;
 }
 
-h2 {
-  padding: 25px;
-  text-align: center;
-}
 footer {
+  margin-top: 20px;
   text-align: center;
 }
 footer a {
-  color: #394043 !important;
+  color: #ecf4f7 !important;
   text-decoration: none !important;
   font-weight: 700;
 }
 footer a:hover {
   text-decoration: underline !important;
+}
+
+@media (max-width: 430px) {
+  footer {
+    font-size: 11px;
+  }
 }

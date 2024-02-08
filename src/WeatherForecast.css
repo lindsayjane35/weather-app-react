@@ -1,5 +1,5 @@
 .WeatherForecast {
-  color: #394043;
+  color: #ecf4f7;
   margin: 10px 20px 10px 20px;
   padding: 10px;
   border: 2px solid rgb(48 30 48 / 13%);
@@ -13,7 +13,7 @@
   font-size: 18px;
   margin: 4px;
   font-weight: 600;
-  color: rgb(119 18 69);
+  color: rgb(238, 23, 120);
 }
 .Forecast-Temp-Low {
   font-size: 18px;

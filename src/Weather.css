@@ -1,7 +1,7 @@
 .Weather {
-  margin: 10px;
+  margin: 50px 10px 0 10px;
   padding: 20px 0 10px 0;
-  background-color: rgb(179 239 235 / 18%);
+  background-color: rgba(1, 18, 17, 0.518);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   text-align: center;
@@ -22,7 +22,7 @@
 .search-button {
   background-color: #394043;
   border: none;
-  color: white;
+  color: #ecf4f7;
 }
 h1 {
   padding: 10px;
@@ -57,7 +57,7 @@ li {
   font-weight: 700;
 }
 .unit a {
-  color: #626b6e;
+  color: #b8bbbc;
   text-decoration: none;
   font-weight: lighter;
 }

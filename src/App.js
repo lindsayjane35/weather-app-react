@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <div className="Container">
-        <h2>React Weather App</h2>
         <Weather defaultCity="Los Angeles" />
       </div>
       <footer>
