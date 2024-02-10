@@ -1,8 +1,8 @@
 .WeatherForecast {
-  color: #ecf4f7;
+  color: #fed8d7;
   margin: 10px 20px 10px 20px;
   padding: 10px;
-  border: 2px solid rgb(48 30 48 / 13%);
+  border: 2px solid #f3f2fa28;
   border-radius: 5px;
 }
 .Forecast-Day {
@@ -18,4 +18,5 @@
 .Forecast-Temp-Low {
   font-size: 18px;
   margin: 4px;
+  color: #f3f2fa;
 }

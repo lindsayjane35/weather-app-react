@@ -1,18 +1,20 @@
 body {
-  background-image: url("../public/starry-sky.jpg");
+  background-image: url("../public/beach-abstract.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #ecf4f7 !important;
+  color: #fed8d7 !important;
   font-family: "Miriam Libre", sans-serif !important;
 }
 
 footer {
-  margin-top: 20px;
+  color: #f3f2fa;
+  margin-top: 30px;
+  margin-bottom: 15px;
   text-align: center;
 }
 footer a {
-  color: #ecf4f7 !important;
-  text-decoration: none !important;
+  color: #f3f2fa;
+  text-decoration: none;
   font-weight: 700;
 }
 footer a:hover {

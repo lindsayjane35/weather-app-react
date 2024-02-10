@@ -1,32 +1,35 @@
 .Weather {
-  margin: 50px 10px 0 10px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
   padding: 20px 0 10px 0;
-  background-color: rgba(1, 18, 17, 0.518);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgb(52 41 47 / 75%);
   border-radius: 10px;
   text-align: center;
+  max-width: 600px;
 }
 .search-form {
   margin: 10px;
 }
 .search-field,
 .search-button {
+  border: none;
   border-radius: 23px;
   padding: 10px 15px 10px 15px;
   margin: 5px;
 }
 .search-field {
-  border: 1px solid #394043;
+  background-color: #f3f2fa;
 }
 
 .search-button {
-  background-color: #394043;
-  border: none;
-  color: #ecf4f7;
+  background-color: rgb(52 41 47);
+  color: #f3f2fa;
 }
 h1 {
   padding: 10px;
   font-size: 45px !important;
+  text-shadow: 3px 2px 2px rgb(53 42 48);
 }
 h3 {
   padding-bottom: 15px;
@@ -43,6 +46,7 @@ li {
 .temperature {
   font-size: 60px;
   font-weight: 600;
+  text-shadow: 3px 2px 2px rgb(53 42 48);
 }
 .icon {
   position: relative;
@@ -57,7 +61,7 @@ li {
   font-weight: 700;
 }
 .unit a {
-  color: #b8bbbc;
+  color: #f3f2fa;
   text-decoration: none;
   font-weight: lighter;
 }
@@ -65,15 +69,13 @@ li {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .WeatherInfo .current-grid {
     display: grid !important;
     grid-template-columns: 1fr;
     width: 350px;
   }
-  .WeatherInfo ul {
-    display: block;
-    margin: 0 auto;
+  .WeatherInfo li {
     text-align: center;
   }
 }
