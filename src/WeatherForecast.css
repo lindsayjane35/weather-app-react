@@ -13,10 +13,10 @@
   font-size: 18px;
   margin: 4px;
   font-weight: 600;
-  color: rgb(238, 23, 120);
+  color: #e69d8b;
 }
 .Forecast-Temp-Low {
   font-size: 18px;
   margin: 4px;
-  color: #f3f2fa;
+  color: #f3f2faa3;
 }
